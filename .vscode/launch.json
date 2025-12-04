@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug C Program",
+            "name": "Debug Hello",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/hello.exe",
@@ -12,13 +12,8 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing"
-                }
-            ]
+            "miDebuggerPath": "gdb",
+            "preLaunchTask": "build hello"
         }
     ]
 }
