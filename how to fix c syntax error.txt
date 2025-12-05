@@ -1,1 +1,17 @@
 "C_Cpp.default.cStandard": "c23"
+
+
+gcc -std=c2x -Wall -lm -o hello hello.c
+1. 预处理 (Preprocessing)   hello.c → hello.i
+2. 编译 (Compilation)       hello.i → hello.s
+3. 汇编 (Assembly)          hello.s → hello.o
+4. 链接 (Linking)           hello.o + libm → hello
+
+# 更严格的编译选项
+gcc -std=c17 \
+    -Wall -Wextra -Wpedantic -Werror \
+    -O2 \
+    -g \
+    hello.c \
+    -lm \
+    -o hello
