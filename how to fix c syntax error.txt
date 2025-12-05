@@ -1,0 +1,1 @@
+"C_Cpp.default.cStandard": "c23"
